@@ -538,9 +538,25 @@ section {
   }
 }
 
+.carousel-hero{
+  width: 100%;
+  padding: 2px 0 !important;
+}
+
+.carousel-styles{
+  margin-left: 20%;
+}
 /*--------------------------------------------------------------
 # Index Page
+# Card with Text
 --------------------------------------------------------------*/
+#cta-card{
+  padding: 20px 14px;
+}
+
+#cta-card-mision{
+  padding: 15px 21px !important;
+  }
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -594,6 +610,19 @@ section {
   transform: translateX(5px);
 }
 
+.row-inverted{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+#cta-card-inverted{
+  padding: 20px 14px;}
+
+  #cta-card-vision{
+    text-align: right!important;
+  }
+
+  
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
@@ -2209,4 +2238,9 @@ padding: 0% !important;
 
 .fab{
   font-size: 1.8rem;
+}
+
+.item img{
+  height: 80vh !important;
+  width: 100%;
 }
