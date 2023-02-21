@@ -546,6 +546,10 @@ section {
 .carousel-styles{
   margin-left: 20%;
 }
+
+.carousel-inner .item img{
+  object-fit: cover;
+}
 /*--------------------------------------------------------------
 # Index Page
 # Card with Text
@@ -970,6 +974,10 @@ section {
 
 .services .service-box:hover .icon {
   background: #fff;
+}
+
+.wraper-cards{
+  justify-content: space-between;
 }
 
 /*--------------------------------------------------------------
@@ -1627,6 +1635,13 @@ section {
   margin-bottom: 6%;
 }
 
+.contact-box h3{
+  font-size: 15px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 .contact .info-box {
   color: #444444;
   background: #fafbff;
@@ -2227,8 +2242,8 @@ footer {
   margin-bottom: 0 !important; 
 }
 
-.footer-container{
-padding: 0% !important;
+#footer-container{
+  padding: 0 !important;
 }
 
 .icons-styles{
@@ -2237,7 +2252,7 @@ padding: 0% !important;
 }
 
 .fab{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .item img{
