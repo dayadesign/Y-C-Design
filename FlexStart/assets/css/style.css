@@ -466,7 +466,7 @@ section {
   font-size: 26px;
 }
 
-.hero .btn-get-started {
+.hero .btn-get-started, .about .btn-get-started{
   margin-top: 30px;
   line-height: 0;
   padding: 15px 40px;
@@ -477,20 +477,20 @@ section {
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
-.hero .btn-get-started span {
+.hero .btn-get-started span, .about .btn-get-started span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.hero .btn-get-started i {
+.hero .btn-get-started i, .about .btn-get-started i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.hero .btn-get-started:hover i {
+.hero .btn-get-started:hover i, .about .btn-get-started:hover i {
   transform: translateX(5px);
 }
 
@@ -554,8 +554,8 @@ section {
 # Index Page
 # Card with Text
 --------------------------------------------------------------*/
-#cta-card{
-  padding: 20px 14px;
+.cta-card{
+  padding: 20px 14px !important; 
 }
 
 #cta-card-mision{
@@ -824,6 +824,16 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+#services{
+  padding: 0;
+  margin: 60px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
