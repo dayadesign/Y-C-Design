@@ -49,7 +49,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
+  <header id="header" class="header fixed-top header-bg">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -60,27 +60,24 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li class="dropdown"><a href="#about"><span>Sobre Nosotros</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#services">Reparación</a></li>
+              <li class="dropdown"><a href="blog.html"><span>Confección</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="blog.html">Calzado a la medida</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Catálogo</a></li>
+          <li class="dropdown"><a href="#history"><span>Sobre Nosotros</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="#mision">Misión</a></li>
               <li><a class="nav-link scrollto" href="#vision">Visión</a></li>
-              <li><a class="nav-link scrollto" href="#history">Historia</a></li>
-
+            </ul>
           </li>
-        </ul>
-        </li>
-        <li class="dropdown"><a href="#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a class="nav-link scrollto" href="#services">Reparación</a></li>
-            <li class="dropdown"><a href="blog.html"><span>Confección</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="blog.html">Calzado a la medida</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a class="nav-link scrollto" href="#portfolio">Catálogo</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -109,7 +106,8 @@
           <img src="assets/img/home_carousel_1.jpg" alt="Chania">
           <div class="carousel-caption">
             <h3>Rubén, 40 años</h3>
-            <p>¡Fascinante! Calzado a mi medida y gusto, combinan perfecto con mi traje de novio.</p>
+            <p>¡Fascinante! Calzado a mi medida y gusto, combinan perfecto con mi traje de
+              novio.</p>
           </div>
         </div>
 
@@ -117,7 +115,8 @@
           <img src="assets/img/home_carousel_2.jpg" alt="Chicago">
           <div class="carousel-caption">
             <h3>Andrea, 25 años</h3>
-            <p>Así de viejitos los amo, les devolvieron la vida a mis mejores amigos de aventuras.</p>
+            <p>Así de viejitos los amo, les devolvieron la vida a mis mejores amigos de
+              aventuras.</p>
           </div>
         </div>
 
@@ -147,7 +146,7 @@
 
   <!-- ======= Card with Text ======= -->
 
-  <section id="hero" class="hero d-flex align-items-center">
+  <section id="hero" class="hero d-flex align-items-center hero-bg">
 
     <div class="container">
       <div class="row">
@@ -158,10 +157,10 @@
           </h2>
           <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
             <div class="text-center text-lg-start">
-              <a href="#mision"
+              <a href="#services"
                 class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
                 id="cta-card">
-                <span>Conoce más</span>
+                <span>Nuestros Servicios</span>
               </a>
             </div>
           </div>
@@ -176,18 +175,260 @@
 
   <!-- End Card with Text -->
   <main id="main">
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nuestros Servicios</h2>
+          <p>
+            ¡Preparados para brindar la mejor solución!</p>
+        </header>
+
+        <div class="row gy-4 wraper-cards">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="fa-solid fa-hammer icon"></i>
+              <h3>REPARACIÓN DE CALZADO</h3>
+              <p>Reparación profesional ¡Dale una segunda oportunidad a esos zapatos que tanto amas!</p>
+              <a href="#contact" class="read-more"><span>Formulario</span> </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box red">
+              <i class="fa-solid fa-pen-ruler icon"></i>
+              <h3>CONFECCIÓN DE CALZADO</h3>
+              <p>Realizado a tú medida, personalizado a tu gusto y con los mejores productos. </p>
+              <a href="blog.html" class="read-more"><span>Conocer más</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+    <hr>
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>CATÁLOGO</h2>
+          <p>Especialidos en calzado para caballeros</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">Calzado Caballero</li>
+              <li data-filter=".filter-card">Accesorios</li>
+              <li data-filter=".filter-web">Productos para el Cuidado</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                 
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                 
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                 
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                 
+                  <a href="https://wa.me/message/5TNE63AU7VO3H1" title="More Details"><i class="fab fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+  
+   <!-- ======= About LINEBREAK ======= -->
+    <hr class="hr-about">
+
+   <!-- ======= About Section About ======= -->
+    <section id="history" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0 ">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Sobre Y&C Design</h3>
+              <h2>Clínica virtual de calzado
+              </h2>
+              <p>
+                Dedicada a la reparación, confección de
+                calzado a la medida y venta de zapatos para caballero.
+                Fundada en 2016 gracias al deseo por alargar la vida de los zapatos.
+                En Y&C Design consideramos esto un arte, es algo que
+                tomamos muy en serio y amamos realizar.
+                
+
+              </p>
+
+              <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
+                <div class="text-center text-lg-start">
+                  <a href="#services"
+                    class="btn-about scrollto d-inline-flex align-items-center justify-content-center align-self-center cta-card">
+                    <span>Servicios</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/home_historia.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
     <!-- ======= About Section Mision ======= -->
+    
+    
     <section id="mision" class="about">
 
       <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
+        <div class="row gx-0 row-inverted">
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h3>Misión</h3>
-              <h2>Ser únicos nos hace mejores</h2>
+              <h2>Ser únicos nos hace los mejores</h2>
               <p>
-                Ser la primera y única empresa de confección de calzado personalizado en la zona de Pérez Zeledón.
+                Brindar un servicio de inmemorable calidad en confección personalizada y reparación de calzado, y alcanzar un impacto positivo
+                en nuestros clientes y el medio ambiente.
               </p>
             </div>
           </div>
@@ -204,17 +445,17 @@
     <!-- End About Section Mision -->
 
     <!-- ======= About Section Vision Inverted ======= -->
-    <section id="vision" class="about hero">
+    <section id="vision" class="about hero-about">
 
       <div class="container" data-aos="fade-up">
-        <div class="row gx-0 row-inverted">
+        <div class="row gx-0">
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h3>Visión</h3>
               <h2>Que nuestra calidad nos diferencie</h2>
               <p>
-                Reparar y modificar cada producto con la mejor calidad, para la persona que lo necesite de forma rápida, eficaz y eficiente.
+                Reparar y modificar cada producto con la mejor calidad y de forma eficaz. Ser la mejor clínica de calzado en el cantón de Pérez Zeledón.
               </p>
 
             </div>
@@ -229,250 +470,10 @@
 
     </section><!-- End About Section Vision Inverted -->
 
-    <!-- Card with Text History -->
-    <section id="history" class="about">
-
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Historia</h3>
-              <h2>Nos enfocamos en brindar un servicio de calidad y diferenciado. Buscando brindar un impacto positivo
-                en el medio ambiente y en la sociedad.
-              </h2>
-              <p>
-                La empresa nació en el año 2016 por un sentimiento el cual está ligado a la vida, el deseo por reparar,
-                restaurar y crear zapatos, además que más que ser un trabajo viene a ser un arte y algo que
-                verdaderamente se ama realizar.
-                Somos una clínica virtual de calzado dedicada a la venta de zapatos para caballero, confección de
-                calzado a la medida y además reparación del mismo.
-
-              </p>
-
-              <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
-                <div class="text-center text-lg-start">
-                  <a href="#services"
-                    class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center cta-card">
-                    <span>Servicios</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/home_historia.jpg" class="img-fluid" alt="">
-          </div>
-
-        </div>
-      </div>
+    
       <!-- End Card with Text About -->
 
-
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-
-        <div class="container" data-aos="fade-up">
-
-          <header class="section-header">
-            <h2>Nuestros Servicios</h2>
-            <p></p>
-          </header>
-
-          <div class="row gy-4 wraper-cards">
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-box red">
-                <i class="fa-solid fa-hammer icon"></i>
-                <h3>REPARACIÓN DE CALZADO</h3>
-                <p>Reparació profesional de calzado, dale una segunda oportunidad a esos zapatos que tanto amas.</p>
-                <a href="#contact" class="read-more"><span>Formulario</span> </a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-box red">
-                <i class="fa-solid fa-pen-ruler icon"></i>
-                <h3>CONFECCIÓN DE CALZADO</h3>
-                <p>Realizado a tú medida, personalizado a tu gusto y con los mejores productos. </p>
-                <a href="blog.html" class="read-more"><span>Conocer más</span> <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section><!-- End Services Section -->
-
-
-
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio">
-
-        <div class="container" data-aos="fade-up">
-
-          <header class="section-header">
-            <h2>CATÁLOGO</h2>
-            <p>Especialidos en calzado para caballeros</p>
-          </header>
-
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">Todos</li>
-                <li data-filter=".filter-app">Calzado Caballero</li>
-                <li data-filter=".filter-card">Accesorios</li>
-                <li data-filter=".filter-web">Productos para el Cuidado</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>App</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>App</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Card 2</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Web 2</h4>
-                  <p>Web</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>App</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Card 1</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Card 3</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                      class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section><!-- End Portfolio Section -->
-
-
+<hr>
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
@@ -514,7 +515,7 @@
                   <div class="info-box">
                     <i class="bi bi-clock"></i>
                     <h3>Horario</h3>
-                    <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                    <p>Lunes - Viernes<br>9:00AM - 05:00PM</p>
                   </div>
                 </div>
               </div>
@@ -552,7 +553,7 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Tu mensaje ha sido enviado, ¡Gracias!</div>
 
-                    <button type="submit">Envíar</button>
+                    <button type="submit" class="btn-send scrollto d-inline-flex align-items-center justify-content-center align-self-center cta-card">Envíar</button>
                   </div>
 
                 </div>
@@ -575,21 +576,22 @@
       <!-- Section: Social media -->
       <section class="mb-4 footer-styles">
         <!-- Facebook -->
-        <a class="btn-outline-light btn-floating m-1 icons-styles" href="https://www.facebook.com/rescatandoviejascostumbres" role="button"><i
-            class="fab fa-facebook-f"></i></a>
+        <a class="btn-outline-light btn-floating m-1 icons-styles"
+          href="https://www.facebook.com/rescatandoviejascostumbres" role="button"><i class="fab fa-facebook-f"></i></a>
 
         <!-- Instagram -->
-        <a class="btn-outline-light btn-floating m-1 icons-styles" href="https://www.instagram.com/rescatandoviejascostumbres/" role="button"><i
+        <a class="btn-outline-light btn-floating m-1 icons-styles"
+          href="https://www.instagram.com/rescatandoviejascostumbres/" role="button"><i
             class="fab fa-instagram"></i></a>
 
         <!-- Whatsapp -->
-        <a class="btn-outline-light btn-floating m-1 icons-styles" href="https://wa.me/message/5TNE63AU7VO3H1" role="button"><i
-            class="fab fa-brands fa-whatsapp"></i></a>
+        <a class="btn-outline-light btn-floating m-1 icons-styles" href="https://wa.me/message/5TNE63AU7VO3H1"
+          role="button"><i class="fab fa-brands fa-whatsapp"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-
+   
 
   </footer><!-- End Footer -->
 
