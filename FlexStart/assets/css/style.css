@@ -40,7 +40,7 @@ h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  
+
   overflow: hidden;
 }
 
@@ -174,15 +174,15 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 9px 0;
-  
+
   max-height: 11%;
 }
 
 .header-bg {
- 
+
   background: #fff;
   opacity: 92%;
- 
+
 }
 
 .header.header-scrolled {
@@ -344,8 +344,15 @@ section {
   }
 }
 
+@media (max-width: 1366px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+}
 
-
+.br-mobile-only {
+  display: none;
+}
 
 
 /**
@@ -361,8 +368,10 @@ section {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  
+
 }
+
+
 
 .mobile-nav-toggle.bi-x {
   color: #fff;
@@ -376,6 +385,10 @@ section {
   .navbar ul {
     display: none;
   }
+
+  .br-mobile-only {
+    display: block;
+  }
 }
 
 .navbar-mobile {
@@ -385,10 +398,10 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background: rgba(0, 0, 0, 0.80);
   transition: 0.3s;
-  width: 60%;
-  height: 96%;
+  width: 61%;
+  height: 93%;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -442,11 +455,11 @@ section {
 }
 
 .navbar-mobile .dropdown ul li {
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -456,7 +469,7 @@ section {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #E4232D;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -466,58 +479,73 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero, .hero-confeccion{
+.hero,
+.hero-confeccion {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
 }
 
-.hero-bg{
+.hero-shortheight {
+  height: 80vh;
+}
+
+.hero-bg {
   background: url(../img/hero-bg.png) top center no-repeat;
 }
 
 
-.carousel-caption h3{
+.carousel-caption h3 {
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 1rem;
 }
 
-.carousel-caption p{
+.carousel-caption p {
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-.carousel-caption{
+.carousel-caption {
   bottom: 5.25rem;
 }
 
-.carousel-indicators{
+.carousel-caption-background-gray {
+  background: rgba(135, 135, 135, 0.40);
+  border-radius: 10px;
+  height: 55%;
+  padding-bottom: 25%
+}
+
+.carousel-indicators {
   bottom: 35px;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
   margin: 1px 10px;
 }
 
-.carousel-indicators .active{
+.carousel-indicators .active {
   margin: 1px 10px;
 }
 
-.hero h1, .hero-confeccion  h1{
+.hero h1,
+.hero-confeccion h1 {
   font-size: 50px;
   font-weight: 700;
   color: #444444;
 }
 
-.hero h2, .hero-confeccion h2 {
+.hero h2,
+.hero-confeccion h2 {
   color: #444444;
   margin: 15px 0 0 0;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
 }
 
-.hero .btn-get-started, .about .btn-get-started{
+.hero .btn-get-started,
+.about .btn-get-started {
   margin-top: 49px;
   line-height: 0;
   padding: 30px 28px;
@@ -528,20 +556,23 @@ section {
   box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
 }
 
-.hero .btn-get-started span, .about .btn-get-started span {
+.hero .btn-get-started span,
+.about .btn-get-started span {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.hero .btn-get-started i, .about .btn-get-started i {
+.hero .btn-get-started i,
+.about .btn-get-started i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.hero .btn-get-started:hover i, .about .btn-get-started:hover i {
+.hero .btn-get-started:hover i,
+.about .btn-get-started:hover i {
   transform: translateX(5px);
 }
 
@@ -549,12 +580,14 @@ section {
   text-align: right;
 }
 
+/*Small monitors*/
 @media (min-width: 1024px) {
   .hero {
     background-attachment: fixed;
   }
 }
 
+/*Tablets*/
 @media (max-width: 991px) {
   .hero {
     height: auto;
@@ -571,6 +604,7 @@ section {
   }
 }
 
+/*Mobile devices*/
 @media (max-width: 768px) {
   .hero {
     text-align: center;
@@ -584,39 +618,58 @@ section {
     font-size: 24px;
   }
 
+  .hero-img {
+    display: none;
+  }
+
   .hero .hero-img img {
     width: 100%;
   }
+
 }
 
-.carousel-hero{
+.carousel-hero {
   width: 100%;
   padding: 2px 0 !important;
 
 }
 
-.carousel-confeccion{
+.carousel-confeccion {
   margin-bottom: 140px;
   width: 100%;
   padding: 2px 0 !important;
 }
 
-.carousel-styles{
+.carousel-styles {
   margin-left: 20%;
 }
 
-.carousel-inner .item img{
+.carousel-inner .item img {
   object-fit: cover;
 }
+
+.carousel-indicators-bottom {
+  bottom: 65px !important;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+/* End footer */
 /*--------------------------------------------------------------
 # Index Page
 # Card with Text
 --------------------------------------------------------------*/
 
 
-#cta-card-mision{
+#cta-card-mision {
   padding: 15px 21px !important;
-  }
+}
 
 
 
@@ -624,16 +677,16 @@ section {
 # Line Divider
 --------------------------------------------------------------*/
 
-.hr-about{
-margin-top: 30px;
-margin-bottom: 76px;
+.hr-about {
+  margin-top: 30px;
+  margin-bottom: 76px;
 }
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 
-#services{
+#services {
   padding: 0;
   margin: 31px;
   height: 100vh;
@@ -666,7 +719,7 @@ margin-bottom: 76px;
   color: #444444;
   font-weight: 700;
   font-size: large;
-    margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
 .services .service-box .read-more {
@@ -706,13 +759,15 @@ margin-bottom: 76px;
 
 .services .service-box:hover h3,
 
-.services .service-box p{
+.services .service-box p {
   font-size: 13px;
 }
-.services .service-box:hover p{
+
+.services .service-box:hover p {
   font-size: 13px;
   color: white;
 }
+
 .services .service-box:hover .read-more {
   color: #fff;
 }
@@ -721,18 +776,27 @@ margin-bottom: 76px;
   background: #fff;
 }
 
-.wraper-cards{
+.wraper-cards {
   justify-content: space-between;
 }
 
+/*Mobile devices for services*/
+@media (max-width: 768px) {
+  #services {
+    height: fit-content;
+  }
 
+  .services{
+    margin-top: 20%;
+  }
+}
 
 
 /*--------------------------------------------------------------
 # Line divider
 --------------------------------------------------------------*/
 
-hr{
+hr {
   border: 0;
   border-top: 4px solid #878787;
   border-radius: 3px;
@@ -936,7 +1000,7 @@ hr{
 .hero-about {
   width: 100%;
 
-  
+
   background-size: cover;
 }
 
@@ -980,24 +1044,26 @@ hr{
   transform: translateX(5px);
 }
 
-.row-inverted{
+.row-inverted {
   flex-direction: row-reverse;
   text-align: right;
 }
 
-.row{
+.row {
   padding-bottom: 60px;
 }
 
 
 
-#cta-card-inverted{
-  padding: 20px 14px;}
+#cta-card-inverted {
+  padding: 20px 14px;
+}
 
-  #cta-card-vision{
-    text-align: right!important;
-  }
-  .btn-about{
+#cta-card-vision {
+  text-align: right !important;
+}
+
+.btn-about {
   margin-top: 4px;
   line-height: 0;
   padding: 30px 28px;
@@ -1007,51 +1073,52 @@ hr{
   background: #E4232D;
   box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
   font-size: 15px;
-  font-weight: 600;}
+  font-weight: 600;
+}
 
 
-  .btn-about:hover{
-    margin-top: 4px;
-    line-height: 0;
-    padding: 30px 28px;
-    border-radius: 92px;
-    transition: 0.5s;
-    color: #fff;
-    background: #E4232D;
-    box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
-    font-size: 15px;
-    font-weight: 600;
-  }
+.btn-about:hover {
+  margin-top: 4px;
+  line-height: 0;
+  padding: 30px 28px;
+  border-radius: 92px;
+  transition: 0.5s;
+  color: #fff;
+  background: #E4232D;
+  box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+  font-size: 15px;
+  font-weight: 600;
+}
 
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-#contact{
+#contact {
   margin-bottom: 6%;
 
 }
 
-.contact h2{
+.contact h2 {
   font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    margin: 0;
-    color: #B31B22;
-    text-transform: uppercase;
-    font-family: "Libre Franklin", sans-serif !important;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #B31B22;
+  text-transform: uppercase;
+  font-family: "Libre Franklin", sans-serif !important;
 }
 
-.contact p{
+.contact p {
   margin: 10px 0 0 0;
   padding: 0;
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
   color: #444444;
-  }
+}
 
-.contact-box h3{
+.contact-box h3 {
   font-size: 15px;
   color: #444444;
   font-weight: 700;
@@ -1154,19 +1221,20 @@ hr{
 
 .contact .php-email-form button[type=submit] {
   margin-top: 10px;
-    line-height: 0;
-    padding: 22px 40px;
-    border-radius: 92px;
-    transition: 0.5s;
-    color: #fff;
-    background: #E4232D;
-    box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
-    border: none;
-    font-size: 15px;
+  line-height: 0;
+  padding: 22px 40px;
+  border-radius: 92px;
+  transition: 0.5s;
+  color: #fff;
+  background: #E4232D;
+  box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+  border: none;
+  font-size: 15px;
 
 }
 
-.contact .php-email-form button[type=submit]:hover, .content .btn-about:hover {
+.contact .php-email-form button[type=submit]:hover,
+.content .btn-about:hover {
   background: #B31B22;
 }
 
@@ -1190,6 +1258,16 @@ hr{
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contact-card {
+    width: 76%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -1203,18 +1281,18 @@ hr{
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-hero{
+.carousel-hero {
   width: 100%;
   padding: 2px 0 !important;
 }
 
 
-.carousel-styles{
+.carousel-styles {
   margin-left: 20%;
 
 }
 
-.carousel-inner .item img{
+.carousel-inner .item img {
   object-fit: cover;
 }
 
@@ -1233,25 +1311,25 @@ footer {
   height: 7%
 }
 
-.footer-styles{
+.footer-styles {
   padding: 1% 0;
-  margin-bottom: 0 !important; 
+  margin-bottom: 0 !important;
 }
 
-#footer-container{
+#footer-container {
   padding: 0 !important;
 }
 
-.icons-styles{
+.icons-styles {
   color: #B31B22;
-  margin: 1.25rem!important;
+  margin: 1.25rem !important;
 }
 
-.fab{
+.fab {
   font-size: 2rem;
 }
 
-.item img{
+.item img {
   height: 80vh !important;
   width: 100%;
 }
