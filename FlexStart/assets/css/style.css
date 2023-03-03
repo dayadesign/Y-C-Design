@@ -510,13 +510,6 @@ section {
   bottom: 5.25rem;
 }
 
-.carousel-caption-background-gray {
-  background: rgba(135, 135, 135, 0.40);
-  border-radius: 10px;
-  height: 55%;
-  padding-bottom: 25%
-}
-
 .carousel-indicators {
   bottom: 35px;
 }
@@ -626,6 +619,16 @@ section {
     width: 100%;
   }
 
+  .carousel-caption-background-gray {
+    background: rgba(135, 135, 135, 0.40);
+    border-radius: 10px;
+    height: 55%;
+    padding-bottom: 25%
+  }
+
+  .carousel-indicators-bottom {
+    bottom: 65px !important;
+  }
 }
 
 .carousel-hero {
@@ -648,9 +651,7 @@ section {
   object-fit: cover;
 }
 
-.carousel-indicators-bottom {
-  bottom: 65px !important;
-}
+
 
 
 /* Footer */
@@ -1234,7 +1235,7 @@ hr {
 }
 
 .contact .php-email-form button[type=submit]:hover,
-.content .btn-about:hover {
+.content .btn-about:hover, .btn-get-started:hover {
   background: #B31B22;
 }
 
