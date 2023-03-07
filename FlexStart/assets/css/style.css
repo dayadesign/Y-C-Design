@@ -242,7 +242,7 @@ section {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: #E4232D;
   white-space: nowrap;
@@ -251,7 +251,7 @@ section {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 17px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -300,7 +300,7 @@ section {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 17px;
   text-transform: none;
   font-weight: 600;
 }
@@ -426,8 +426,8 @@ section {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
+  padding: 15px 20px;
+  font-size: 17px;
   color: #B31B22;
 }
 
@@ -638,7 +638,7 @@ section {
 }
 
 .carousel-confeccion {
-  margin-bottom: 140px;
+  margin-bottom: 60px;
   width: 100%;
   padding: 2px 0 !important;
 }
@@ -690,7 +690,7 @@ footer {
 #services {
   padding: 0;
   margin: 31px;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,6 +703,9 @@ footer {
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+}
+.services{
+  margin-top: 85px;
 }
 
 .services .service-box .icon {
@@ -1015,7 +1018,7 @@ hr {
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .about .btn-read-more {
@@ -1096,7 +1099,8 @@ hr {
 # Contact
 --------------------------------------------------------------*/
 #contact {
-  margin-bottom: 6%;
+  margin-bottom: 1%;
+  margin-top: 3%;
 
 }
 
@@ -1323,11 +1327,11 @@ footer {
 
 .icons-styles {
   color: #B31B22;
-  margin: 1.25rem !important;
+  margin: 2.25rem !important;
 }
 
 .fab {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .item img {
